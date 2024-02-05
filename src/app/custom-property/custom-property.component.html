@@ -1,0 +1,22 @@
+<p>{{childMessage}}</p>
+
+<p>Your Customer ID is: {{customerID}}</p>
+
+<p *ngIf="showChildMessage">This is New Toggle message with the
+ Help of @Input decorator</p>
+
+<p>User Name: {{userChildObject.name}}  <br> User Age: {{userChildObject.age}}</p>
+
+<p>This is array example: {{childArray.join('-')}}</p>
+
+<p>{{myInputData}}</p>
+
+<div>
+    <h3>Child Component</h3>
+    <p>Received Custom Instance:</p>
+    <ul>
+      <li>Name: {{ customInstance.name }}</li>
+      <li>Age: {{ customInstance.age }}</li>
+      <li>Info: {{ customInstance.displayInfo() }}</li>
+    </ul>
+  </div>

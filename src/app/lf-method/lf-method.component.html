@@ -1,0 +1,7 @@
+<p>Parent Component</p>
+<input type="text" [(ngModel)]="parentFieldData"/>
+<app-lf-child [InputField]="parentFieldData">
+    <div #contentChild>Content passed from parent</div>
+</app-lf-child>
+
+
